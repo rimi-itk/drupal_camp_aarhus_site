@@ -1,0 +1,25 @@
+name: Drupal Camp site
+type: profile
+description: 'Drupal Camp site.'
+core: 8.x
+
+# Optional: Declare your installation profile as a distribution
+# This will make the installer auto-select this installation profile.
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution:
+  name: Drupal Camp site
+
+dependencies:
+  # From "minimal" install profile.
+  - node
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+
+  # Custom modules
+  - drupal_camp_aarhus
+
+themes:
+  - adminimal_theme
